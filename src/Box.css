@@ -1,0 +1,59 @@
+body{
+    margin-top: 0;
+    margin-left: 10%;
+    border: border-box;
+  }
+  #container{
+    position: relative;
+    width:500px;
+    height:500px;
+    background-color: rgb(164, 112, 212);
+  
+  }
+  #p{
+  position: relative;
+  align-items: center;
+  top: 35%;
+  font-size:16px;
+  background-color:rgb(154, 87, 163);
+  }
+  
+  .box{
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      background-color: rgb(208, 182, 233);
+      animation-direction:normal;
+  }
+  #count {
+    margin: 35px;
+    color: white;
+    font-size: 20px;
+  }
+  .animated{
+    animation-name: move;
+    animation-duration: 10s;
+    animation-direction:forwards;
+    animation-fill-mode: backwards;
+    }   
+  
+    .moveItem {
+      animation: move 10s backwards;
+    }
+    
+    .pauseItem {
+      animation-play-state: paused;
+    }
+    
+    @keyframes move {
+      0% {
+        top: 0;
+        left: 0%;
+      }
+    
+      100% {
+        top: 0;
+        left: calc(100% - 100px);
+      }
+    }

@@ -1,0 +1,17 @@
+body{
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+h1{
+  color: purple;
+  text-align: center;
+  display: inline-block;
+  margin-left: 25%;
+}
+   
+#container{
+      position: relative;
+      margin-left: 25%;
+      width: 50%;
+      background-color: rgb(113, 19, 201);
+}
